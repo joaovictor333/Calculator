@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="(https://fonts.google.com/specimen/Space+Mono)">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <div class="logo">
+    <img src="images/logo.svg"><br>
+  </div>
+ 
+  <div class="container">
+    <div class="content">
+      <p>Conta</p>
+      <div class="input-num">
+        <input type="number" id="Conta" name="PrimeiraConta">
+        <i><img src="images/icon-dollar.svg"></i>
+      </div>
+
+      <div class="select-tip">
+        <p>Selecione Dica %</p>
+
+        <button onclick="Dica1()">5%</button>
+        <button onclick="Dica2()">10%</button>
+        <button onclick="Dica3()">15%</button><br>
+        <button onclick="Dica4()">25%</button>
+        <button onclick="Dica5()">50%</button>
+        <input type="text" class="Custom" title="Personalizado" id="AD" name="Adicione">
+      </div>
+
+      <div class="People">
+        <p>Número de Pessoas</p>
+        <input type="number" id="NP" name="NumeroDePessoas">
+        <i><img src="images/icon-person.svg"></i>
+      </div>
+
+    </div>
+
+    <section class="secao">
+      <div class="tip">
+        <p>Valor da gorjeta</p>
+       
+        <p style="color: hsl(180, 30%, 45%);">/ pessoa</p>
+        <b id="valor">$0.00</b>
+      </div>
+
+      <div class="amout">
+        <span class="Not">
+          <p>Total</p>
+       
+          <p style="color: hsl(180, 30%, 45%);">/ pessoa</p>
+        </span>
+
+        <b id="total">$0.00</b>
+      </div>
+
+      <div class="Reset">
+        <input type="reset" id="reset" name="Resetar" value="RESET">
+      </div>
+    </section>
+  </div>
+
+<!--Falta o JavaScript-->
+</body>
+</html>
